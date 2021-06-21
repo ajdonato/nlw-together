@@ -1,11 +1,13 @@
 .content {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 55% 45%;
     grid-template-rows: 11.4rem 1fr;
 
     grid-template-areas:
         'header header'
-        'left right'
+        'left right';
+
+    height: 100vh;
 }
 
 header {
@@ -15,7 +17,8 @@ header {
 #bg {
     grid-area: left;
 
-    background: url('/assets/bg-img.svg') no-repeat top/contain;
+    background: url('/assets/bg-img.svg') no-repeat left/contain;
+
 }
 
 main {
@@ -23,10 +26,11 @@ main {
 
     display: flex;
     align-items: center;
+
 }
 
 main .container {
-    width: min(36.3rem 100%);
+    width: 36.3rem;
 }
 
 main h2 {
@@ -39,6 +43,7 @@ main h2 {
 input {
     border: .2rem solid var(--grey-blue);
     padding: 0 1.6rem;
+    text-decoration: none;
 }
 
 input,
@@ -46,4 +51,29 @@ button,
 .button {
     width: 100%;
     margin-bottom: 1.8rem;
+}
+
+/* remove setas do input number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.separator:before {
+    content: "--------";
+    float: left;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+.separator:after {
+    content: "--------";
+    float: right;
 }
