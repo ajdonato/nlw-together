@@ -51,13 +51,6 @@ button,
     margin-bottom: 1.8rem;
 }
 
-/* remove setas do input number */
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
 /* Sperador do OU */
 
 .separator {
