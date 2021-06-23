@@ -178,30 +178,3 @@
     color: var(--grey-dark);
     font-size: 1.4rem;
 }
-
-@media (max-width: 480px) {
-    .content {
-        max-width: min(102rem, 90%);
-    }
-
-    .question-wrapper {
-        padding: 1.4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    #room header {
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-
-    }
-
-    #room header a {
-        text-align: center;
-    }
-
-    #room .buttons {
-        margin-top: 1.6rem;
-    }
-}
