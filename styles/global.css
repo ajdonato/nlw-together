@@ -39,6 +39,7 @@ textarea {
     /* intervalo de exibição tamanho fonte*/
     font-size: clamp(14px, 1.6rem, 2vw);
     font-family: 'Open Sans', sans-serif;
+    outline: none;
     /*font-family: 'Poppins', sans-serif;*/
 }
 

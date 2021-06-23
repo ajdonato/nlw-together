@@ -37,7 +37,6 @@
     margin-bottom: 4rem;
     padding: 1.3rem 1.6rem;
     border: .2rem solid var(--blue);
-    outline: none;
     width: min(70%, 30.2rem);
 }
 
