@@ -151,3 +151,57 @@
     background: var(--grey-blue);
 }
 
+/* BALÃO SEM PERGUNTA */
+
+.q-baloon {
+    text-align: center;
+
+    margin-top: 5.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.q-baloon img {
+    width: 13.5rem;
+    height: 13.5rem;
+}
+
+.q-baloon h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.7rem;
+    color: var(--black);
+
+    margin-bottom: 1.3rem;
+}
+
+.q-baloon p {
+    color: var(--grey-dark);
+    font-size: 1.4rem;
+}
+
+@media (max-width: 480px) {
+    .content {
+        max-width: min(102rem, 90%);
+    }
+
+    .question-wrapper {
+        padding: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #room header {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+
+    }
+
+    #room header a {
+        text-align: center;
+    }
+
+    #room .buttons {
+        margin-top: 1.6rem;
+    }
+}
