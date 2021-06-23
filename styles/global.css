@@ -19,6 +19,7 @@ html {
 
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
+    --grey-mediun: #eaecf2;
     --grey-light: #E5EAF1;
 
     /* 1rem = 16px = 100% */
@@ -109,6 +110,18 @@ button.outlined,
     background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue);
+}
+
+button.grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+}
+
+button.red,
+.button.red {
+    background: var(--red);
+    color: var(--white);
 }
 
 /* remove setas do input number */
