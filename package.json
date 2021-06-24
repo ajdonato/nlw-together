@@ -1,0 +1,24 @@
+{
+  "name": "nlw-together",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r   <img alt=\"Rocket.Q\" title=\"Rocket.Q\" src=\".github/rocketq.png\" width=\"220px\" />\r </h1>",
+  "main": "index.js",
+  "scripts": {
+    "start":"node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajdonato/nlw-together.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajdonato/nlw-together/issues"
+  },
+  "homepage": "https://github.com/ajdonato/nlw-together#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
