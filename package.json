@@ -4,14 +4,15 @@
   "description": "<h1 align=\"center\">\r   <img alt=\"Rocket.Q\" title=\"Rocket.Q\" src=\".github/rocketq.png\" width=\"220px\" />\r </h1>",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "init-db": "node src/db/init.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ajdonato/nlw-together.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Amazon Donato",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ajdonato/nlw-together/issues"
@@ -19,7 +20,9 @@
   "homepage": "https://github.com/ajdonato/nlw-together#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
