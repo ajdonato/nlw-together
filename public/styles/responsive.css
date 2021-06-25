@@ -1,3 +1,28 @@
+/* MODAL */
+@media (max-width: 878px) {
+    .modal-wrapper .modal {
+        width: 85%;
+        padding: 4rem;
+    }
+
+    .modal-wrapper .modal .buttons {
+        display: grid;
+    }
+
+    .modal-wrapper .modal input {
+        width: min(85%, 30.2rem);
+    }
+
+    .modal-wrapper .modal .buttons .cancel {
+        margin-bottom: 1rem;
+    }
+
+    .modal-wrapper .modal .buttons .red {
+        margin-left: 0;
+    }
+}
+
+
 /* ROOM CSS */
 @media (max-width: 480px) {
     .content {
@@ -11,7 +36,7 @@
 
 @media (max-width: 768px) {
     #room header {
-        display: grid; 
+        display: grid;
         justify-content: center;
     }
 
@@ -55,7 +80,7 @@
         align-items: flex-start;
     }
 
-    main h2{
+    main h2 {
         font-size: 2.4rem;
         text-align: center;
     }
@@ -71,25 +96,25 @@
     }
 
     .create {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 9rem 1fr 1fr;
-    grid-template-areas:
-        'header header'
-        'left left'
-        'right right';
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 9rem 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'left left'
+            'right right';
     }
 
     .create header {
         width: 90%;
     }
 
-    main{
+    main {
         justify-content: center;
         align-items: flex-start;
     }
 
-    main h2{
+    main h2 {
         text-align: center;
         font-size: 2.2rem;
     }
