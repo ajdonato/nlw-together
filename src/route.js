@@ -1,5 +1,6 @@
 const express = require('express')
 const QuestionController = require('./controllers/QuestionController')
+const RoomController = require('./controllers/RoomController')
 
 const route = express.Router()
 
@@ -10,8 +11,10 @@ route.get('/create-room', (req, res) => res.render("index", {
     page: 'create-room'
 }))
 
-route.get('/room', (req, res) => res.render("room"))
+route.get('/room/:room', (req, res) => res.render("room"))
 
-route.post('/room/:room/:question/:action', QuestionController.index)
+route.post('/question/:room/:question/:action', QuestionController.index)
+route.post('/createroom', RoomController.create)
+
 
 module.exports = route
