@@ -18,6 +18,7 @@
         rel="stylesheet">
 
     <script src="/scripts/main.js" defer type="module"></script>
+
 </head>
 
 <body>
@@ -42,7 +43,8 @@
                 <h2>Faça sua pergunta</h2>
                 <form action="/question/create/<%= roomId %>" method="POST">
                     <label for="question" class="scr-only">O que você quer perguntar?</label>
-                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+                    <textarea name="question" id="question" placeholder="O que você quer perguntar?"
+                        required></textarea>
 
                     <footer>
                         <div>
@@ -118,7 +120,7 @@
             <p>Tem certeza que você deseja excluir esta pergunta?</p>
             <form action="#" method="POST">
                 <label for-id="password" class="scr-only">Digite sua senha</label>
-                <input id="password" type="password" name="password" placeholder="Digite sua senha">
+                <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
 
                 <div class="buttons">
                     <div class="button grey cancel">Cancelar</div>
