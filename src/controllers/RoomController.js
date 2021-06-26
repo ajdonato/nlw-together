@@ -55,9 +55,24 @@ module.exports = {
         })
     },
 
-    enter(req, res) {
-        const roomId = req.body.roomId
+    async enter(req, res) {
+        const db = await Database()
 
-        res.redirect(`/room/${roomId}`)
+        const roomId = req.body.roomId
+        let isRoom = true
+        while (isRoom) {
+            const roomsExistIds = await db.all(`SELECT id FROM rooms`)
+            isRoom = roomsExistIds.some(roomExistId => roomExistId == roomId)
+
+            if (!isRoom) {
+                res.render(`/room-not-exist`)
+            } else {
+                res.redirect(`/room/${roomId}`)
+            }
+        }
+        await db.close()
+
+
+
     }
 }

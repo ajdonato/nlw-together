@@ -10,10 +10,14 @@ route.get('/', (req, res) => res.render("index", {
 route.get('/create-room', (req, res) => res.render("index", {
     page: 'create-room'
 }))
+route.get('/room-not-exist', (req, res) => res.render("index", {
+    page: 'not-exist'
+}))
+route.get('/room/:room', RoomController.open)
 
 route.post('/createroom', RoomController.create)
-route.get('/room/:room', RoomController.open)
 route.post('/enterroom', RoomController.enter)
+
 
 route.post('/question/create/:room', QuestionController.create)
 route.post('/question/:room/:question/:action', QuestionController.index)
