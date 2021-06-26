@@ -54,25 +54,14 @@
                 </form>
             </section>
 
-            <!-- BALÃO SEM PERGUNTA 
-
-            <section class="q-baloon">
-                <div>
-                    <img src="/images/question-baloon.svg" alt="Imagem balão pergunta">
-                </div>
-                <h2>Nenhuma pergunta por aqui...</h2>
-                <p>Faça sua primeira pergunta e envie o<br>
-                código dessa sala para outras pessoas!</p>
-            </section>
-
-            -->
-
             <section id="questions">
                 <h2 class="scr-only">Perguntas da comunidade</h2>
 
+                <% if (isNoQuestions){ %>
+                <%- include('parts/noquestion') %>
+                <% } %>
+
                 <% questions.forEach(question => {%>
-
-
                 <div class="question-wrapper">
                     <div class="question-content">
                         <div class="user">
